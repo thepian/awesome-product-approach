@@ -1,0 +1,245 @@
+---
+description: This helps organise notes on keeping a consistent design for a native App, website or webapp
+globs: 
+alwaysApply: false
+---
+It is essential to keep the look and feel of a digital product in the way intended. For that purpose a design rules must be documented in a place where you will find it when creating markup and visual components.
+
+Here is a comprehensive, self-describing template for documenting Design System decisions for a website. This template is structured to ensure clarity, consistency, and completeness, and can be used as a living document for your team.
+
+> **How to Use This Template:**
+>
+> - Fill in each section with your project’s specific decisions and rationale.
+> - Update as the design system evolves.
+> - Use tables and diagrams where helpful.
+> - Reference real code, tokens, or design files when possible.
+
+
+<DSD>
+
+# Design System Decision Document
+
+> **Purpose:**  
+> This document records all key design system decisions for the website, ensuring consistency, clarity, and a shared reference for all designers and developers.
+
+## 1. Brand & Visual Identity
+
+### 1.1. Brand Values & Tone of Voice
+
+- **Brand Values:**  
+  _Describe the core values the design should communicate (e.g., trust, innovation, friendliness)._
+- **Tone of Voice:**  
+  _Describe the tone for all written content (e.g., formal, conversational, playful, authoritative)._
+- **Logo Usage:**  
+  _Guidelines for logo placement, sizing, and clear space._
+
+## 2. Color System
+
+### 2.1. Primary Color Palette
+
+- **Primary Colors:**  
+  | Name | Hex | Usage Example |
+  |-----------|----------|----------------------|
+  | Primary | # | Buttons, links |
+  | Secondary | # | Highlights, accents |
+  | ... | ... | ... |
+
+### 2.2. Secondary & Accent Colors
+
+- **Secondary Colors:**  
+  _List and describe usage (e.g., backgrounds, cards, tags)._
+- **Accent Colors:**  
+  _For notifications, highlights, etc._
+
+### 2.3. Semantic Colors
+
+- **Success:** # (e.g., green)
+- **Warning:** # (e.g., yellow)
+- **Error:** # (e.g., red)
+- **Info:** # (e.g., blue)  
+  _Describe where and how each is used._
+
+### 2.4. Backgrounds & Gradients
+
+- **Default Background:** #
+- **Alternate Backgrounds:** #
+- **Gradients:**  
+  _CSS gradient definitions, usage examples._
+
+### 2.5. Accessibility
+
+- **Contrast Ratios:**  
+  _Document minimum contrast ratios for text/backgrounds._
+- **Color Blind Accessibility:**  
+  _Describe how the palette supports accessibility._
+
+## 3. Typography
+
+### 3.1. Font Families
+
+- **Primary Font:**  
+  _Name, fallback stack, usage._
+- **Secondary Font:**  
+  _If any, and usage._
+
+### 3.2. Font Sizes & Scale
+
+- **Type Scale:**  
+  | Token | Size (px/rem) | Usage |
+  |------------|--------------|---------------|
+  | Heading 1 | | Page titles |
+  | Heading 2 | | Section titles|
+  | Body | | Main text |
+  | ... | | ... |
+
+### 3.3. Font Weight, Stretch, and Style
+
+- **Weights:**  
+  _e.g., Regular, Medium, Bold. Where to use each._
+- **Stretch:**  
+  _e.g., Condensed, Expanded, if used._
+- **Style:**  
+  _e.g., Italic, Oblique, if used._
+
+### 3.4. Spacing & Line Height
+
+- **Line Height:**  
+  _For headings, body, captions, etc._
+- **Letter Spacing:**  
+  _For headings, body, buttons, etc._
+- **Word Spacing:**  
+  _If custom values are used._
+
+### 3.5. Capitalization Rules
+
+- **Headings:**  
+  _e.g., Title Case, ALL CAPS, Sentence case._
+- **Buttons:**  
+  _e.g., ALL CAPS, Sentence case._
+- **Body Text:**  
+  _e.g., Sentence case._
+
+## 4. Illustration & Imagery
+
+### 4.1. Illustration Style
+
+- **Style Description:**  
+  _e.g., Flat, outline, isometric, 3D, hand-drawn._
+- **Color Usage:**  
+  _Palette, gradients, shadows, etc._
+- **Line Weight:**  
+  _Consistent line thickness, if applicable._
+- **Level of Detail:**  
+  _Simple, detailed, abstract, realistic._
+
+### 4.2. Iconography
+
+- **Icon Set:**  
+  _Name/source, e.g., Material, custom._
+- **Size & Alignment:**  
+  _Standard sizes, alignment rules._
+- **Stroke/Fill:**  
+  _Outline, filled, duotone, etc._
+
+### 4.3. Photography
+
+- **Style:**  
+  _e.g., Candid, staged, color grading, subject focus._
+- **Usage:**  
+  _Where and how photos are used._
+
+## 5. Layout & Spacing
+
+### 5.1. Grid System
+
+- **Grid Type:**  
+  _e.g., 12-column, 8pt, CSS Grid, Flexbox._
+- **Breakpoints:**  
+  _List all responsive breakpoints and their pixel values._
+- **Max Widths:**  
+  _Container max-widths for desktop, tablet, mobile._
+
+### 5.2. Spacing & Gaps
+
+- **Spacing Scale:**  
+  | Token | Value (px/rem) | Usage Example |
+  |---------|----------------|-------------------|
+  | XS | | Small gaps |
+  | SM | | Between buttons |
+  | MD | | Section padding |
+  | LG | | Page padding |
+  | ... | | ... |
+
+- **Gaps Between Components:**  
+  _Standard vertical and horizontal gaps between UI elements._
+
+- **Column & Row Gaps:**  
+  _Grid and table spacing._
+
+### 5.3. Component Sizing
+
+- **Standard Component Sizes:**  
+  _e.g., Button heights, input fields, cards, modals._
+- **Relative Sizing:**  
+  _How components scale relative to each other (e.g., button vs. input)._
+- **Minimum/Maximum Sizes:**  
+  _For touch targets, cards, etc._
+
+## 6. Components
+
+### 6.1. Core Components
+
+- **List of Components:**  
+  _e.g., Button, Input, Card, Modal, Navbar, Footer, etc._
+- **Component Anatomy:**  
+  _Breakdown of each component’s parts (e.g., Button: icon, label, container)._
+- **States:**  
+  _Default, hover, active, disabled, loading, etc._
+- **Variants:**  
+  _Primary, secondary, ghost, etc._
+
+### 6.2. Component Relationships
+
+- **Relative Size:**  
+  _How components relate in size and space._
+- **Nesting & Grouping:**  
+  _Rules for grouping components (e.g., button groups, card lists)._
+
+## 7. Motion & Interaction
+
+### 7.1. Animation Principles
+
+- **Easing & Timing:**  
+  _Standard curves and durations._
+- **Usage:**  
+  _Where and when to use motion (e.g., button hover, modal open)._
+
+### 7.2. Feedback & States
+
+- **Loading Indicators:**  
+  _Types and placement._
+- **Error/Success Feedback:**  
+  _How feedback is shown to users._
+
+## 8. Accessibility
+
+- **Keyboard Navigation:**  
+  _Tab order, focus states._
+- **Screen Reader Support:**  
+  _ARIA labels, roles._
+- **Color Contrast:**  
+  _Minimum ratios._
+- **Touch Targets:**  
+  _Minimum size for interactive elements._
+
+## 9. Documentation & Maintenance
+
+- **Versioning:**  
+  _How changes to the design system are tracked._
+- **Contribution Guidelines:**  
+  _How team members propose and document changes._
+- **References:**  
+  _Links to Figma, Storybook, or other design assets._
+
+</DSD>
+

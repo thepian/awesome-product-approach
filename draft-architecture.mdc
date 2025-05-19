@@ -1,0 +1,39 @@
+---
+description: A draft architecture clarifies high level technical choices appropriate for the specific project. It needs to be reviewed by an expert to ensure the right direction.
+globs: 
+alwaysApply: false
+---
+Generate an initial draft of the software architecture and a set of Architecture Design Records (ADRs) based on the following Product Requirements Document (PRD):
+
+{{PRD}}
+
+Consider the perspective of a seasoned Software Architect, going beyond the surface-level requirements in the PRD to:
+
+-   **Uncover hidden assumptions:** Identify implicit expectations or constraints that may not be explicitly stated in the PRD.
+-   **Challenge stated requirements:** Question the rationale behind certain requirements and explore alternative approaches that might better achieve the underlying business goals.
+-   **Analyze trade-offs:** Evaluate different architectural options, considering factors such as scalability, reliability, security, performance, cost, and maintainability.
+-   **Elaborate on technical implications:** Explain the technical details and potential challenges associated with implementing the proposed architecture.
+
+The architecture draft should include:
+
+-   A high-level overview of the system components and their interactions, presented as a diagram or a textual description.
+-   Identification of key architectural characteristics (e.g., scalability, reliability, security, performance) and their relative priorities.
+-   Proposed technology choices for major components, with justifications that consider the identified trade-offs.
+-   A discussion of potential risks and mitigation strategies.
+-   Consideration of non-functional requirements (NFRs) and how the architecture addresses them.
+
+The ADRs should follow the template below and address significant architectural decisions arising from the PRD analysis. Each ADR should explicitly state:
+
+-   **Title:** A concise and descriptive name for the decision.
+-   **Status:** \[Proposed | Accepted | Rejected | Superseded]
+-   **Context:** A detailed description of the problem or need that this decision addresses, including relevant background information and constraints.
+-   **Decision:** A clear and unambiguous statement of the chosen architectural solution.
+-   **Rationale:** A thorough explanation of the reasoning behind the decision, including the evaluation of alternative options and the identification of trade-offs.
+-   **Consequences:** A comprehensive analysis of the positive and negative outcomes of this decision, including its impact on various aspects of the system and the project.
+-   **Assumptions:** A list of the underlying beliefs, conditions, or dependencies that this decision relies on.  These should be specific and testable.
+-  **Objectives:** The architectural goals and quality attributes (e.g., scalability, maintainability, security) that this decision is intended to achieve.  These should be measurable wherever possible.
+-   **Related ADRs:** Links to other ADRs that are related to this decision, either because they influence it or are influenced by it.
+
+Use the following template for each ADR:
+
+Title: [Concise Decision Title]Status[Proposed | Accepted | Rejected | Superseded]Context[Describe the problem or need that this decision addresses. Provide detailed background information and any relevant constraints.]Decision[State the chosen architectural solution clearly and unambiguously.]Rationale[Explain the reasoning behind the decision.  Include:Evaluation of alternative options.Identification of trade-offs.Explanation of why the chosen solution was preferred.]Consequences[Describe the positive and negative outcomes of this decision. Include:Impact on system
